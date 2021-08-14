@@ -1,289 +1,663 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
-  <head>
-    <!-- Metadata of the Webpage -->
-    <!-- Character-set Metadata -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Viewport Metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
-    <meta name="author" content="Aditya Vikram Singh" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
-        Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram
-        Singh UMass Amherst, Aditya Vikram Singh New Delhi, Aditya Vikram
-        Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
-        Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
-    />
-    <!-- Webpage Logo -->
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Myo Paing Thu</title>
 
-    <!-- Import CSS: Main Stylesheet -->
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <body>
-    <div id="particles-js">
-      <div class="header">
-        <h1>
-          <span class="site-title">Myo Paing Thu</span>
-          <span class="site-description">Programmer • Web Developer</span>
-        </h1>
-        <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/avs1508/">
-            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/AVS1508">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-          <a aria-label="My Résumé" target="_blank" href="https://www.adityavsingh.com/resume.html">
-            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
-          </a>
-          <a aria-label="Send Email" href="mailto:paingthumyo41297@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
-        </div>
-        <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
-          <a class="link" href="#projects" data-scroll>Projects</a>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Myo Paing Thu | Web Developer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Varad Bhogayata | Software Developer" />
+  <meta property="og:description" content="Software Developer" />
+  <meta property="og:url" content="https://varadbhogayata.github.io/" />
+  <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
+  <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
+  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@varad_bhogayata" />
+  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+  <meta name="twitter:description" content="Software Developer" />
+  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
+  <meta name="author" content="Varad Bhogayata" />
+  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
+
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="assets/img/profile.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <!-- <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li> -->
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open resume in a new tab" href="https://drive.google.com/file/d/1vbx1Qz3USnIYKuwmIE4ScqB-2T-SQTSc/view?usp=sharing" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Myo
+        Paing Thu</a><span class="black-text">Web Developer</span>
+    </div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <!-- <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li> -->
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Resume in a new tab"
+          href="https://drive.google.com/file/d/1vbx1Qz3USnIYKuwmIE4ScqB-2T-SQTSc/view?usp=sharing" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Myo Paing Thu.</span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/myo-paing-thu-027aaa214" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/myopaingthu" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+
+              <a href="mailto:paingthumyo41297@gmail.com" target="_blank">
+                <button class="icon-btn angellist">
+                  <i class="fa fa-envelope"></i>
+                </button>
+              </a>
+
+              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+
+                  </span>
+              </a> -->
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-    </div>
+    </section>
 
-    <!-- About Section -->
-    <section id="about">
-      <!-- User Introduction-->
-      <div class="user-details">
-        <h1>My Story</h1>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-          <img
-            src="./assets/img/jpg/Professional-Picture-Me.jpg"
-            alt="Professional Me"
-            width="20%"
-            style="border-radius: 50%"
-          />
-        </picture>
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <blockquote>
+          <h2>
+            A Web Developer with a passion for Backend Development and Frontend Development.
+
+          </h2>
+        </blockquote>
         <p>
-          I am a junior in the College of Information and Computer Sciences at the University of Massachusetts Amherst,
-          pursuing an undergraduate degree. I am majoring in Computer Science, with intent to double major in
-          Mathematics with Statistics and Data Science concentration. I'm involved as a Software Developer for BUILD
-          UMass, where I use my software engineering skills for pro-bono app/web development and tech consulting for the
-          Amherst community. I also serve as a Designer for the HackUMass Organizing Team, responsible for graphics
-          design and production for the annual hackathon. I am interested in exploring the fields of Software
-          Engineering, Data Science, and Machine Learning, and I am open to opportunities for the same.
+          I am a Fourth year Software Engineering Student at University of Information Technology. And due to current situation, I decided to start my
+          career as a web developer and search for a job as a junior developer. 
+          As I want to be a full stack developer, I am interested in exploring the fields of frontend and backend technologies. Now, I am learning these technologies
+          and doing little projects to make sure the completion of learning new technology.
+          <!-- Detail-oriented Software Engineer with a get-it-done, on-time, and high-quality product spirit and a keen interest in Software Development and Artificial Intelligence. -->
+        </p>
+        <!-- <p>
+          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+        </p> -->
+        <!-- <p>
+          Another Paragraph
+        </p>  -->
+        <!-- <p>
+        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
+          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
+          aria-label="Navigate to the Full Stack React homepage"
+          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
+          aria-label='Navigate to the article "Scalable CSS"'
+          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
+        </p> -->
+      </div>
+    </section>
+
+
+    <!-- Third Section: Experience -->
+   
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="assets/img/main page.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Mini buy and sell e-commerce<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  A buy and sell e-commerce like web-app that based on laravel
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Laravel, HTML, CSS, Bootstrap, Jquery</li>
+                  <li>For authentication, I used Laravel Breeze auth package.</li>
+                  <li>And I enabled email verification feature.</li>
+                  <li>Create login listener to store every user login time after login event.</li>
+                  <li>I also used common laravel features as policies,view composer,etc..</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <!-- <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a> -->
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/myopaingthu/Mini-buy-and-sell-ecommerce"
+                    target="_blank" data-position="top" data-tooltip="View Source and Demo gif"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="assets/img/notification.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Notification development<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  I have tried to use most of laravel features to cover my learning completion.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>For new comment notification:</b> just database notification.</li>
+                  <li><b>For password changed notification:</b> email,database notification.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/myopaingthu/Mini-buy-and-sell-ecommerce"
+                    target="_blank" data-position="top" data-tooltip="View Source and Demo gif"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flask Project -->
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="assets/img/admin.png"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Admin panel<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  For admin panel, I used template for ui and other packages.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>I used ArchitectUi template for ui and used sweetalert2 for popup boxes and toast message.</li>
+                  <li>For datatable, I used server side Yajra datatables.</li>
+                  <li>And I used Laravel Excel to excel imports and exports.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/myopaingthu/Mini-buy-and-sell-ecommerce"
+                    target="_blank" data-position="top" data-tooltip="View Source and Demo gif"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VQA -->
+          <div class="col s12 m6 l6">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="assets/img/vue.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Vuejs project<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Now, I have finished learning Vuejs and start to build Vuejs based project.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Coming soon...</li>
+                </ul>
+                <!-- <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project"
+                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
+                    data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         
+
+         
+         
+
+          <!-- ************* -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/javascript.jpg" class="responsive-img" />Javascript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/php.png" class="responsive-img" />Php
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/java.png" class="responsive-img" />Java
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/laravel.png" class="responsive-img" />Laravel
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/vuejs.png" class="responsive-img" />Vuejs
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/jquery.png" class="responsive-img" />Jquery
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Database and Other</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/git.png" class="responsive-img" />Git
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Algorithms (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.facebook.com/UITMyanmar/" target="_blank" class="teal-text hoverline">University of Information Technology</a></span>
+                </p>
+                <p class="brown-text">2015-Now</p>
+                <p>
+                  Fourth year student specialized in Software Engineering     
+                </p>
+
+                <ul>
+                  <p>
+                    <b>Relevant examinations:</b>
+                  <ul>
+                    <li>Information Technology Passport Examination(2019)</li>
+                  </ul>
+                  </p>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Extra Courses from Coursera and Udemy</a></span>
+                </p>
+                <ul>
+                  <p>
+                  <ul>
+                    <li>Build Your First Android App (Project-Centered Course) by Coursera</li>
+                    <li>Version Control with Git by Coursera</li>
+                    <li>Udemy - Projects in Laravel: Learn Laravel Building 10 Projects</li>
+                    <li>Udemy - The Complete Android P + Java Developer Course™ 2019</li>
+                    <li>Udemy - Real Time Single Page Forum App with Pusher Laravel & Vue.js</li>
+                    <li>Udemy – 2019 Fullstack: Full Laravel with QRCodes,APIs,Android/iOS Course</li>
+                  </ul>
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Me" data-position="top" data-tooltip="Call me"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Me">+959790735938</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Me" href="mailto:paingthumyo41297@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Me" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Me" href="mailto:paingthumyo41297@gmail.com"
+              class="hoverline">paingthumyo41297@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View my GitHub" href="https://github.com/myopaingthu" target="_blank"
+            data-position="top" data-tooltip="View my GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="View my Github" href="https://github.com/myopaingthu" class="hoverline"
+              target="_blank">github.com/myopaingthu</a></a>
+        </p>
+        <p>
+          <a aria-label="My address" href="https://goo.gl/maps/TDALthpCD1LQ9xzd7" target="_blank"
+            data-position="top" data-tooltip="My address"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-map-marker"></i><a aria-label="My address" href="https://goo.gl/maps/TDALthpCD1LQ9xzd7"
+              class="hoverline" target="_blank">No-306, Arthar Waddy(Phone Gyi) Road,North Okkalapa Township, Yangon</a></a>
         </p>
       </div>
-
-      <!-- User Specifics -->
-      <div class="user">
-        <!-- Technology Stack #1: Languages -->
-        <div class="tech">
-          <h2>Languages</h2>
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-java-plain-wordmark colored"></i>
-          <i class="devicon-cplusplus-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
-        </div>
-
-        <!-- Technology Stack #2: Front-End -->
-        <div class="tech">
-          <h2>Front-End</h2>
-          <i class="devicon-react-original colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <p>My preferred technologies for front-end web development and component design.</p>
-        </div>
-
-        <!-- Technology Stack #3: Back-End -->
-        <div class="tech">
-          <h2>Back-End</h2>
-          <i class="devicon-php-plain"></i>
-          <i class="devicon-express-original-wordmark colored"></i>
-          <i class="devicon-mongodb-plain-wordmark colored"></i>
-          <i class="devicon-postgresql-plain-wordmark colored"></i>
-          <p>My preferred technologies for back-end web programming and database architecture.</p>
-        </div>
-
-        <!-- Technology Stack #4: Tools -->
-        <div class="tech">
-          <h2>Tools</h2>
-          <i class="devicon-git-plain-wordmark colored"></i>
-          <i class="devicon-visualstudio-plain colored"></i>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-docker-plain-wordmark colored"></i>
-          <p>My favorite tools for version control, code editing, and container orchestration.</p>
-        </div>
-      </div>
     </section>
+  </main>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="user-details">
-        <h1>Featured Projects</h1>
-      </div>
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Web Artisan", "Developer", "Fast Learner"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
-      <!-- User Project #1: Personal Résumé Website -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp" alt="Personal Website" />
-            <img alt="Personal Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Personal Website</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-              style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-            />
-            &nbsp;
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
-              style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
-            />
-            &nbsp;
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          </div>
-          <p style="text-align: justify">
-            I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase my web
-            presence, story, work experience, education, projects, and achievements in an interactive and
-            visually-appealing format.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/">Check it out!</a>
-        </div>
-      </div>
 
-      <!-- User Project #2: Summer 2020 Project -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/Perpetual-Crusades.webp" alt="Perpetual Crusades" />
-            <img alt="Perpetual Crusades" src="./assets/img/jpg/Perpetual-Crusades.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Perpetual Crusades</h3>
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
-            style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
-          />
-          &nbsp;
-          <img
-            height="32"
-            width="32"
-            src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
-            style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
-          />
-          &nbsp;
-          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          <p style="text-align: justify">
-            I created a two-player online dice-based board game with a theme loosely set around Dungeons & Dragons. It
-            was developed as a submission for Penn Apps XXI, using ReactJS and CSS Grid Layouts for design and hosted on
-            GitHub Pages.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Summer-2020-Project"
-            >Check it out!</a
-          >
-        </div>
-      </div>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-      <!-- User Project #3: COVID-19 Tracker App -->
-      <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assets/img/webp/COVID19-Tracker-App.webp" alt="COVID-19 Tracker App" />
-            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/COVID19-Tracker-App.jpg" />
-          </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>COVID-19 Tracker App</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
-              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I created a web application for tracking the spread of COVID-19. Using Johns Hopkins University Center For
-            Systems Science and Engineering API, the website processes the COVID-19 data to create statistical
-            projections through graphs and charts.
-          </p>
-          <a class="project-link" target="_blank" href="https://www.adityavsingh.com/covid19-tracker-app">
-            Check it out!
-          </a>
-        </div>
-      </div>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
 
-      <!-- Use Project #4: Valuto: Account Management System -->
-      <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source
-              type="image/webp"
-              srcset="./assets/img/webp/Valuto-Account-Management.webp"
-              alt="Valuto: Account Management System"
-            />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/Valuto-Account-Management.jpg" />
-          </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Valuto: Account Management System</h3>
-          <div>
-            <img
-              height="32"
-              width="32"
-              src="https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg"
-              style="filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
-            />
-          </div>
-          <p style="text-align: justify">
-            I developed a CLI system for accounting management and financial statement maintenance. The purpose of the
-            system is to maintain a record of the funds received, used, disseminated and donated by an organization.
-            Details of transactions and maintenance of a budget and tallying of current balance/inventory in cash/kind
-            is incorporated in this system.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Valuto-Account-Management-System">
-            Check it out!
-          </a>
-        </div>
-      </div>
-    </section>
-
-    
-
-    <!-- Import JS: Particles Theme -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- Import JS: Sweet Scroll -->
-    <script src="./assets/js/sweet-scroll.min.js"></script>
-    <!-- Import JS: Google Analytics -->
-    <script src="./assets/js/google-analytics.js"></script>
-    <!-- Import JS: Main Script -->
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
