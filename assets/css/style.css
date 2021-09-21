@@ -84,13 +84,14 @@
 .readme {
   position: relative;
   padding: 11px 35px;
-  background: #fff;
-  color: #00796b;
+  background: none;
+  color: #fff;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
+  margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
@@ -115,6 +116,11 @@
   -webkit-border-radius: 5px;
 }
 
+.readme:hover{
+  color: #00796b;
+  background-color: white;
+}
+
 .contactme:hover{
   color: #00796b;
   background-color: white;
@@ -126,6 +132,10 @@
 body {
   color: #333;
   font-size: 18px;
+}
+
+div.light-teal {
+  background-color: E0F2F1;
 }
 
 /* body {
@@ -224,7 +234,7 @@ ul.side-nav {
 }
 
 ul.side-nav li {
-  padding: 0;
+  padding-left: 0;
 }
 
 /* ul.side-nav.fixed a {
@@ -256,6 +266,11 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   padding: 30px 30px 40px;
 } */
 
+.small-logo-profile-photo {
+  margin-top: 40px;
+  border-bottom: 1px solid #ddd;
+}
+    
 ul.side-nav.fixed li.logo {
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
@@ -466,6 +481,14 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
+span.hovertext:hover {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+
 /* main a.hoverline */
 
 /* a.hoverline:hover {
@@ -496,7 +519,7 @@ a.hoverline:hover {
 }
 
 .card.large .card-content p {
-  color: inherit;
+  /* color: inherit; */
   margin: 0;
   padding: 30px 0;
 }
