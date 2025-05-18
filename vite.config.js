@@ -5,23 +5,14 @@ import { resolve } from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/myopaingthu.github.io/',
+  base: '/',
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      'vue': 'vue/dist/vue.esm-bundler.js'
+      '@': resolve(__dirname, 'src')
     }
   },
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue'
-        }
-      }
-    }
+    assetsDir: 'assets'
   }
 })
