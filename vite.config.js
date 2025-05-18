@@ -9,16 +9,17 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-    },
+      'vue': 'vue/dist/vue.esm-bundler.js'
+    }
   },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
+      external: ['vue'],
       output: {
-        manualChunks: {
-          'vue': ['vue'],
-          'vuex': ['vuex']
+        globals: {
+          vue: 'Vue'
         }
       }
     }
