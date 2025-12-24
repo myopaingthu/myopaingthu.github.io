@@ -1,0 +1,21 @@
+.text-type {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.text-type__content {
+  display: inline;
+  max-width: 100%;
+}
+
+.text-type__cursor {
+  display: inline-block;
+  margin-left: 2px;
+}
+
+.text-type__cursor--hidden {
+  opacity: 0 !important;
+}
