@@ -1,62 +1,64 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: 'class',
   content: [
-    './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          light: '#93c5fd', // light blue
-          DEFAULT: '#3b82f6', // blue-500
-          dark: '#1e40af', // blue-900
+          light: '#93c5fd',
+          DEFAULT: '#3b82f6',
+          dark: '#1e40af',
         },
         background: {
-          light: '#f8fafc', // slate-50
-          dark: '#0f172a', // slate-900
+          dark: '#0f172a',
         },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         glow: '0 20px 45px -20px rgba(59, 130, 246, 0.45)',
+        'glow-lg': '0 25px 50px -12px rgba(59, 130, 246, 0.35)',
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.8s ease-out forwards',
+        'fade-in': 'fadeIn 0.8s ease-in forwards',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-soft': 'pulseSoft 4s ease-in-out infinite',
+        'gradient': 'gradient 8s linear infinite',
+        'shimmer': 'shimmer 2s linear infinite',
       },
       keyframes: {
-        'fade-up': {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        'fade-in': {
+        fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        'gradient-move': {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-        },
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' },
+          '50%': { transform: 'translateY(-20px)' },
         },
-        'pulse-soft': {
-          '0%, 100%': { opacity: '0.45' },
-          '50%': { opacity: '0.85' },
+        pulseSoft: {
+          '0%, 100%': { opacity: '0.4' },
+          '50%': { opacity: '0.8' },
         },
-        'scroll-bounce': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(10px)' },
+        gradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
         },
-      },
-      animation: {
-        'fade-up': 'fade-up 0.8s ease-out forwards',
-        'fade-in': 'fade-in 0.8s ease-in forwards',
-        'gradient-move': 'gradient-move 12s ease-in-out infinite',
-        float: 'float 5s ease-in-out infinite',
-        'pulse-soft': 'pulse-soft 6s ease-in-out infinite',
-        'scroll-bounce': 'scroll-bounce 1.6s ease-in-out infinite',
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       },
     },
   },
   plugins: [],
 }
-
