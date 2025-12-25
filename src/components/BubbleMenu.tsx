@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { gsap } from 'gsap';
 import './BubbleMenu.css';
 
@@ -42,11 +43,12 @@ export default function BubbleMenu({
   animationDuration = 0.5,
   staggerDelay = 0.12
 }: BubbleMenuProps) {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
 
   const overlayRef = useRef<HTMLDivElement>(null);
-  const bubblesRef = useRef<(HTMLAnchorElement | null)[]>([]);
+  const bubblesRef = useRef<(HTMLElement | null)[]>([]);
   const labelRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
   const containerClassName = ['bubble-menu', useFixedPosition ? 'fixed' : 'absolute', className]
@@ -62,7 +64,7 @@ export default function BubbleMenu({
 
   useEffect(() => {
     const overlay = overlayRef.current;
-    const bubbles = bubblesRef.current.filter(Boolean) as HTMLAnchorElement[];
+    const bubbles = bubblesRef.current.filter(Boolean) as HTMLElement[];
     const labels = labelRefs.current.filter(Boolean) as HTMLSpanElement[];
 
     if (!overlay || !bubbles.length) return;
@@ -118,7 +120,7 @@ export default function BubbleMenu({
   useEffect(() => {
     const handleResize = () => {
       if (isMenuOpen) {
-        const bubbles = bubblesRef.current.filter(Boolean) as HTMLAnchorElement[];
+        const bubbles = bubblesRef.current.filter(Boolean) as HTMLElement[];
         const isDesktop = window.innerWidth >= 900;
 
         bubbles.forEach((bubble, i) => {
@@ -138,7 +140,12 @@ export default function BubbleMenu({
   return (
     <>
       <nav className={containerClassName} style={style} aria-label="Main navigation">
-        <div className="bubble logo-bubble cursor-pointer" aria-label="Logo" style={{ background: menuBg }} onClick={() => location.href = "/"}>
+        <div 
+          className="bubble logo-bubble cursor-pointer" 
+          aria-label="Logo" 
+          style={{ background: menuBg }} 
+          onClick={() => navigate("/")}
+        >
           <span className="logo-content">
             {typeof logo === 'string' ? <img src={logo} alt="Logo" className="bubble-logo" /> : logo}
           </span>
@@ -165,9 +172,9 @@ export default function BubbleMenu({
           <ul className="pill-list" role="menu" aria-label="Menu links">
             {items.map((item, idx) => (
               <li key={idx} role="none" className="pill-col">
-                <a
+                <Link
+                  to={item.href}
                   role="menuitem"
-                  href={item.href}
                   aria-label={item.ariaLabel || item.label}
                   className="pill-link"
                   style={{
@@ -191,7 +198,7 @@ export default function BubbleMenu({
                   >
                     {item.label}
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

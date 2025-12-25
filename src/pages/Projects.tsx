@@ -176,7 +176,7 @@ export default function Projects() {
                       <div className="pt-4 border-t border-white/10 flex flex-wrap gap-2 mt-auto">
                         {project.links.map((link) => (
                           <motion.a
-                            key={link.label}
+                            key={link.label + link.href}
                             href={link.href}
                             target="_blank"
                             rel="noopener noreferrer"

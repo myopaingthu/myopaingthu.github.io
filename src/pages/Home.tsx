@@ -10,6 +10,7 @@ import {
 import TextType from "../components/TextType";
 import BlurText from "../components/BlurText";
 import SpotlightCard from "../components/SpotlightCard";
+import { Link } from "react-router-dom";
 
 // Code snippets for each skill
 const codeSnippets: Record<string, { lines: JSX.Element[], color: string }> = {
@@ -171,12 +172,12 @@ export default function Home() {
           {/* CTA Buttons */}
           <AnimatedSection delay={0.5}>
             <div className="flex flex-wrap items-center gap-4">
-              <a href="/contact">
+              <Link to="/contact">
                 <ShimmerButton>
                   Let's collaborate
                 </ShimmerButton>
-              </a>
-              <a href="/projects">
+              </Link>
+              <Link to="/projects">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -184,7 +185,7 @@ export default function Home() {
                 >
                   View projects
                 </motion.button>
-              </a>
+              </Link>
             </div>
           </AnimatedSection>
         </div>
