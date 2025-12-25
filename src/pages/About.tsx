@@ -1,4 +1,4 @@
-import { GraduationCap, Code, Server, Database, Wrench } from "lucide-react";
+import { Code, Server, Database, Wrench } from "lucide-react";
 import { motion } from "framer-motion";
 import { personalInfo, skillGroups } from "../data/portfolio";
 import {

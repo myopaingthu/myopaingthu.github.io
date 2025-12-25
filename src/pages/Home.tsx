@@ -1,7 +1,6 @@
 import { useState, type JSX } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Code2, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 import { personalInfo } from "../data/portfolio";
 import {
   AnimatedSection,

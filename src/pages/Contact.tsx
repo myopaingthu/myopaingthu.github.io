@@ -1,11 +1,10 @@
-import { Phone, Mail, Linkedin, Github, Send } from "lucide-react";
+import { Phone, Mail, Linkedin, Github } from "lucide-react";
 import { contactMethods, availability } from "../data/portfolio";
 import {
   AnimatedSection,
   StaggerContainer,
   StaggerItem,
   ScaleOnHover,
-  ShimmerButton,
 } from "../components/Animations";
 import SpotlightCard from "../components/SpotlightCard";
 
