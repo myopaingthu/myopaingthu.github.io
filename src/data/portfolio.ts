@@ -198,8 +198,41 @@ export const projects = [
     links: [{ label: "Visit Website", href: "https://sonicmoov.com/works/studico/" }],
   },
   {
+    title: "Agent Change Review",
+    category: "Personal Project",
+    description:
+      "A VS Code extension that reviews what a coding agent changed, one request at a time, before you keep it. A Claude Code hook records a Git checkpoint around each request, so the panel shows only the agent's work for that request — never your own hand-edits — with per-hunk accept/reject, multi-repo support, and keyboard-driven review.",
+    tags: ["VS Code Extension", "TypeScript", "Claude Code", "Git"],
+    links: [
+      { label: "View on Website", href: "https://marketplace.visualstudio.com/items?itemName=myopaingthu.agent-change-review" },
+      { label: "View on GitHub", href: "https://github.com/myopaingthu/agent-change-review" },
+    ],
+  },
+  {
+    title: "DB Diagram Tool",
+    category: "Personal Project",
+    description:
+      "A real-time, AI-assisted visual database schema designer in the spirit of dbdiagram.io. Drag-and-drop ER canvas built with React Flow and a side-by-side DBML editor stay in sync as you work, with a NestJS/Socket.IO backend handling DBML parsing, diagram persistence in MongoDB, JWT authentication, and an AI schema assistant that streams generated changes token-by-token.",
+    tags: ["React", "NestJS", "TypeScript", "Socket.IO", "MongoDB", "Zustand", "AI Integration"],
+    links: [
+      { label: "View on Website", href: "https://db-diagram-tool-fe-ruddy.vercel.app" },
+      { label: "GitHub", href: "https://github.com/myopaingthu/db-diagram-tool-fe" },
+      { label: "GitHub", href: "https://github.com/myopaingthu/db-diagram-tool-bk" },
+    ],
+  },
+  {
+    title: "OrderFlow Integration Hub",
+    category: "Personal Project",
+    description:
+      "An event-driven order integration platform built with NestJS, PostgreSQL, Redis, and Redpanda (Kafka-compatible). The business logic is deliberately small; the focus is the architecture — the outbox pattern, idempotency on both edges, retries with backoff, dead-letter handling, and full observability via Prometheus and Grafana across six services.",
+    tags: ["NestJS", "PostgreSQL", "Kafka", "Redis", "Microservices"],
+    links: [
+      { label: "View on GitHub", href: "https://github.com/myopaingthu/OrderFlow-Integration-Hub" },
+    ],
+  },
+  {
     title: "Responsive Language Learning App",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A responsive web app for language learning, featuring interactive exercises and progress tracking. Built with Vue 3 Composition API and TypeScript.",
     tags: ["Vue 3", "TypeScript"],
@@ -210,7 +243,7 @@ export const projects = [
   },
   {
     title: "Mini Buy and Sell E-commerce with Admin Dashboard",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A simple e-commerce platform with admin dashboard, product management, and other features. Built for learning and experimentation.",
     tags: ["MySQL", "jQuery", "Laravel 8"],
@@ -220,7 +253,7 @@ export const projects = [
   },
   {
     title: "Real time forum app (Udemy Course)",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A real-time discussion platform where users can create topics, post replies, and interact instantly. Features real-time updates, user authentication, topic and post management, and admin moderation. Built with Laravel 8, MySQL, Vue.js, and Laravel WebSocket.",
     tags: ["MySQL", "Vue.js", "Laravel 8", "Laravel WebSocket"],
@@ -231,7 +264,7 @@ export const projects = [
   },
   {
     title: "Inventory Management System",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A backend system for managing inventory, supporting CRUD operations for products, stock tracking, and reporting. Built with Node.js, Express.js, and MongoDB.",
     tags: ["Node.js", "Express.js", "MongoDB"],
@@ -241,7 +274,7 @@ export const projects = [
   },
   {
     title: "Library Management System",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A web-based system for managing library resources, including book inventory, member management, and lending operations. Built with Laravel 8, MySQL, and Docker.",
     tags: ["MySQL", "Laravel 8", "Docker"],
@@ -251,7 +284,7 @@ export const projects = [
   },
   {
     title: "Online Counselling System",
-    category: "Learning Project",
+    category: "Personal Project",
     description:
       "A web-based platform designed to facilitate online counselling sessions, appointment management, and secure communication between counsellors and clients. Built with Laravel 8, MySQL, and Docker for scalable deployment.",
     tags: ["MySQL", "Laravel 8", "Docker"],

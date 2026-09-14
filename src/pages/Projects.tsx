@@ -18,7 +18,7 @@ export default function Projects() {
 
   const currentGallery = activeGallery ? galleries[activeGallery] : null;
 
-  const categories = ["All", "Professional Work", "Learning Project"];
+  const categories = ["All", "Professional Work", "Personal Project"];
   
   const filteredProjects = activeCategory === "All" 
     ? projects 
@@ -122,7 +122,7 @@ export default function Projects() {
                               : "bg-purple-500/20 text-purple-300 border-purple-500/30 shadow-purple-500/20"
                           }`}
                         >
-                          {project.category === "Professional Work" ? "Work" : "Learning"}
+                          {project.category === "Professional Work" ? "Work" : "Personal"}
                         </span>
                       </div>
 
